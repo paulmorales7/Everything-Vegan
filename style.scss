@@ -29,7 +29,7 @@ $box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 8.5rem;
@@ -56,9 +56,10 @@ html {
   z-index: 1000;
   background: white;
   box-shadow: $box-shadow;
+  margin-left: 0.3rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 2rem 9%;
 
   .logo{
@@ -78,6 +79,29 @@ html {
         font-style: 1.7rem;
         margin: 0 1rem;
         color: #666;
+
+        &:hover{
+            color: green;
+        }
     }
   }
+
+  .icons div{
+      height: 4rem;
+      width: 4rem;
+      line-height: 4rem;
+      font-size: 2rem;
+      background: rgb(247, 247, 247);
+      color: black;
+      border-radius: .5rem;
+      margin-left: 0.3rem;
+      cursor: pointer;
+      padding-left: 7%;
+
+      &:hover{
+          color: white;
+          background: green;
+      }
+    }
+    
 }

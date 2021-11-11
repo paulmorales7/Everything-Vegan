@@ -15,7 +15,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 8.5rem;
@@ -44,15 +44,16 @@ html::-webkit-scrollbar-thumb {
   background: white;
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
           box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+  margin-left: 0.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 2rem 9%;
 }
 
@@ -71,5 +72,27 @@ html::-webkit-scrollbar-thumb {
   font-style: 1.7rem;
   margin: 0 1rem;
   color: #666;
+}
+
+.header .navbar a:hover {
+  color: green;
+}
+
+.header .icons div {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  background: #f7f7f7;
+  color: black;
+  border-radius: .5rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  padding-left: 7%;
+}
+
+.header .icons div:hover {
+  color: white;
+  background: green;
 }
 /*# sourceMappingURL=style.css.map */
