@@ -13,6 +13,7 @@
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
   background: black;
+  color: white;
 }
 
 html {
@@ -42,8 +43,8 @@ html::-webkit-scrollbar-thumb {
   left: 0;
   right: 0;
   z-index: 1000;
-  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
-          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1rem 1rem rgba(42, 97, 49, 0.137);
+          box-shadow: 0 1rem 1rem rgba(42, 97, 49, 0.137);
   margin-left: 0.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,9 +59,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .header .logo {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: black;
+  width: 100px;
 }
 
 .header .logo i {
@@ -69,7 +68,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .header .evlogo {
-  width: 160px;
+  width: 120px;
 }
 
 .header .navbar a {
@@ -99,5 +98,39 @@ html::-webkit-scrollbar-thumb {
 .header .icons div:hover {
   color: white;
   background: #004100;
+}
+
+#menu-btn {
+  display: none;
+}
+
+.title {
+  padding: 5rem 0 2rem 5rem;
+}
+
+.menu-cart-container {
+  position: fixed;
+  top: 8.5rem;
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+}
+
+.menu-cart-container::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.menu-cart-container::-webkit-scrollbar-track {
+  background: white;
+}
+
+.menu-cart-container::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 5rem;
+}
+
+.menu-cart-container .images {
+  width: 250px;
+  border-radius: 25px;
 }
 /*# sourceMappingURL=style.css.map */
