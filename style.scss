@@ -15,7 +15,9 @@
   color: white;
 }
 
-$border: 0.1rem solid rgba(0, 0, 0, 0.2);
+// header section 
+
+$border: 0.15rem solid rgb(0, 65, 0);
 $box-shadow: 0 1rem 1rem rgba(42, 97, 49, 0.137);
 
 @mixin grid($val) {
@@ -84,7 +86,7 @@ html {
       color: white;
 
       &:hover {
-        color: green;
+        color: rgb(0, 65, 0);
       }
     }
   }
@@ -99,7 +101,7 @@ html {
     border-radius: 0.5rem;
     margin-left: 0.3rem;
     cursor: pointer;
-    padding-left: 7%;
+    text-align: center;
 
     &:hover {
       color: white;
@@ -112,16 +114,21 @@ html {
   display: none;
 }
 
+// products section 
+
 .title {
   padding: 5rem 0 2rem 5rem;
 }
 
 .menu-cart-container {
   position: fixed;
-  top: 8.5rem;
-  left: 0;
-  right: 0;
+  top: 11.5rem;
+  left: 10rem;
+  right: 10rem;
+  height: calc(100vh - 8.5rem);
+  z-index: 1000;
   overflow-y: scroll;
+  // display: none;
   // background: white;
 
   &::-webkit-scrollbar {
@@ -129,7 +136,7 @@ html {
   }
 
   &::-webkit-scrollbar-track {
-    background: white;
+    background: darkgreen;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -138,7 +145,29 @@ html {
   }
 
   .images {
-    width: 250px;
+    width: 200px;
     border-radius: 25px;
   }
+
+.title{
+  font-size: 2.5rem;
+  padding: 1rem;
+  border-bottom: $border;
+  text-align: center;
+}
+
+.products-container{
+  border: $border;
+  border-radius: .5rem;
+
+  .box-container{
+    @include grid(30rem);
+
+    .box{
+      border-radius: .5rem;
+      // background: rgba(42, 97, 49, 0.137);
+
+    }
+  }
+}
 }

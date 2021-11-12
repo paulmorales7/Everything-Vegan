@@ -79,7 +79,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .header .navbar a:hover {
-  color: green;
+  color: #004100;
 }
 
 .header .icons div {
@@ -92,7 +92,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 0.5rem;
   margin-left: 0.3rem;
   cursor: pointer;
-  padding-left: 7%;
+  text-align: center;
 }
 
 .header .icons div:hover {
@@ -110,9 +110,11 @@ html::-webkit-scrollbar-thumb {
 
 .menu-cart-container {
   position: fixed;
-  top: 8.5rem;
-  left: 0;
-  right: 0;
+  top: 11.5rem;
+  left: 10rem;
+  right: 10rem;
+  height: calc(100vh - 8.5rem);
+  z-index: 1000;
   overflow-y: scroll;
 }
 
@@ -121,7 +123,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .menu-cart-container::-webkit-scrollbar-track {
-  background: white;
+  background: darkgreen;
 }
 
 .menu-cart-container::-webkit-scrollbar-thumb {
@@ -130,7 +132,31 @@ html::-webkit-scrollbar-thumb {
 }
 
 .menu-cart-container .images {
-  width: 250px;
+  width: 200px;
   border-radius: 25px;
+}
+
+.menu-cart-container .title {
+  font-size: 2.5rem;
+  padding: 1rem;
+  border-bottom: 0.15rem solid #004100;
+  text-align: center;
+}
+
+.menu-cart-container .products-container {
+  border: 0.15rem solid #004100;
+  border-radius: .5rem;
+}
+
+.menu-cart-container .products-container .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.menu-cart-container .products-container .box-container .box {
+  border-radius: .5rem;
 }
 /*# sourceMappingURL=style.css.map */
