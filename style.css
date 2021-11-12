@@ -132,7 +132,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .menu-cart-container .images {
-  width: 200px;
+  height: 8rem;
   border-radius: 25px;
 }
 
@@ -145,7 +145,7 @@ html::-webkit-scrollbar-thumb {
 
 .menu-cart-container .products-container {
   border: 0.15rem solid #004100;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .menu-cart-container .products-container .box-container {
@@ -154,9 +154,27 @@ html::-webkit-scrollbar-thumb {
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
+  padding: 1.5rem;
 }
 
 .menu-cart-container .products-container .box-container .box {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
+  background: rgba(42, 97, 49, 0.137);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.menu-cart-container .products-container .box-container .fa-times {
+  position: absolute;
+  top: .7rem;
+  right: 1rem;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
