@@ -144,11 +144,6 @@ html {
     border-radius: 5rem;
   }
 
-  .images {
-    height: 8rem;
-    border-radius: 25px;
-  }
-
   .title {
     font-size: 2.5rem;
     padding: 1rem;
@@ -169,16 +164,45 @@ html {
         background: rgba(42, 97, 49, 0.137);
         display: flex;
         align-items: center;
-        gap: 1.5rem ;
+        gap: 1.5rem;
         padding: 2rem;
         position: relative;
       }
 
-      .fa-times{
+      .fa-times {
         position: absolute;
-        top: .7rem;
+        top: 0.7rem;
         right: 1rem;
         font-size: 1.5rem;
+        cursor: pointer;
+
+        &:hover {
+          color: darkgreen;
+        }
+      }
+
+      img {
+        height: 8rem;
+        border-radius: 25px;
+      }
+
+      .content {
+        background: rgba(42, 97, 49, 0);
+
+        h3 {
+          font-size: 2rem;
+          background: rgba(42, 97, 49, 0);
+        }
+
+        input {
+          background: rgba(42, 97, 49, 0.1);
+          width: 10%;
+        }
+
+        span {
+          font-size: 1rem;
+          background: rgba(42, 97, 49, 0);
+        }
       }
     }
   }

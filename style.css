@@ -131,11 +131,6 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 
-.menu-cart-container .images {
-  height: 8rem;
-  border-radius: 25px;
-}
-
 .menu-cart-container .title {
   font-size: 2.5rem;
   padding: 1rem;
@@ -173,8 +168,37 @@ html::-webkit-scrollbar-thumb {
 
 .menu-cart-container .products-container .box-container .fa-times {
   position: absolute;
-  top: .7rem;
+  top: 0.7rem;
   right: 1rem;
   font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu-cart-container .products-container .box-container .fa-times:hover {
+  color: darkgreen;
+}
+
+.menu-cart-container .products-container .box-container img {
+  height: 8rem;
+  border-radius: 25px;
+}
+
+.menu-cart-container .products-container .box-container .content {
+  background: rgba(42, 97, 49, 0);
+}
+
+.menu-cart-container .products-container .box-container .content h3 {
+  font-size: 2rem;
+  background: rgba(42, 97, 49, 0);
+}
+
+.menu-cart-container .products-container .box-container .content input {
+  background: rgba(42, 97, 49, 0.1);
+  width: 10%;
+}
+
+.menu-cart-container .products-container .box-container .content span {
+  font-size: 1rem;
+  background: rgba(42, 97, 49, 0);
 }
 /*# sourceMappingURL=style.css.map */
