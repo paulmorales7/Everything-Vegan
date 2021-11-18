@@ -36,6 +36,20 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .5rem 1.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background: rgba(42, 97, 49, 0.137);
+  border-radius: .5rem;
+}
+
+.btn:hover {
+  background: darkgreen;
+}
+
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -194,11 +208,38 @@ html::-webkit-scrollbar-thumb {
 
 .menu-cart-container .products-container .box-container .content input {
   background: rgba(42, 97, 49, 0.1);
-  width: 10%;
+  width: 2.7rem;
+  padding: .3rem;
+  font-size: 1rem;
+  margin: .5rem 0;
 }
 
 .menu-cart-container .products-container .box-container .content span {
   font-size: 1rem;
   background: rgba(42, 97, 49, 0);
+}
+
+.menu-cart-container .products-container .box-container .content span.price {
+  color: #028102;
+}
+
+.menu-cart-container .cart-total {
+  margin-top: 2rem;
+  border: 0.15rem solid #004100;
+  border-radius: .5rem;
+}
+
+.menu-cart-container .cart-total .box {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.menu-cart-container .cart-total .box h3 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.menu-cart-container .cart-total .box span {
+  color: #028102;
 }
 /*# sourceMappingURL=style.css.map */
